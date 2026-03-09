@@ -8,6 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+    body {
+        text-align: center;
+    }
+
+    form {
+        display: inline-block;
+        padding: 1em;
+        border: 1px solid aqua;
+        border-radius: 1em;
+    }
+
+    p + p {
+        margin-top: 1em;
+    }
+
+    label {
+        display: inline-block;
+        min-width: 90px;
+        text-align: right;
+    }
+
+    input, 
+    textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999999;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline-style: solid;
+        outline-color: black;
+    }
+
+    textarea {
+        vertical-align: top;
+        height: 5em;
+    }
+
+    .button {
+        padding-left: 90px;
+    }
+
+    button {
+        margin-left: 0.5em;
+    }
+
+</style>
   </head>
   <body>
     <h1>My test website</h1>
@@ -19,7 +69,27 @@
         <li>To land a job</li>
         <li>Because I really enjoy anything related to tech</li>
     </ol>
-<p>This is a simple test page made as an exercise to learn more about full stack web development. For this part I am suppose to add one or more paragraphs of text to see how that looks when rendered in the browser. I don't really know what else to type here to make the paragraph long enough. I am considering adding some lorem ipsum to fill up the space but maybe this will be long enough by now.</p>
-    <a href="http://google.com">Go to google</a>
+<p>This is a simple test page made as an exercise to learn more about full stack web development. For this part I am suppose to add one or more paragraphs of text to see how that looks when rendered in the browser. I don't really know what else to type here to make the paragraph long enough. I am considering adding some lorem ipsum to fill up the space but maybe this will be long enough by now.
+    <a href="https://github.com/sara-czasak">Go to My Github profile</a>
+
+</p>
+    
+    <form action="/my-handling-form-page" method="post">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name"/>
+        </p>
+        <p>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_emaii"/>
+        </p>
+        <p>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </p>
+        <p class="button">
+            <button type="submit">Send your message</button>
+        </p>
+    </form>
   </body>
 </html>
